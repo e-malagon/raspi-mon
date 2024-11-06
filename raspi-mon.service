@@ -1,0 +1,9 @@
+[Unit]
+Description=Raspi-mon systemd service.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/raspi-mon /etc/raspi-mon.conf
+
+[Install]
+WantedBy=multi-user.target
