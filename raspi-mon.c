@@ -887,7 +887,7 @@ int display_uptime_info(uint16_t text_color, uint16_t window_color) {
             int h = (uptime / 3600);
             uptime %= 3600;
             if (0 < d)
-                sprintf(uptime_string, "%3d:%02dD", d, h, (uptime / 60));
+                sprintf(uptime_string, "%3d:%02d:%02dD", d, h, (uptime / 60));
             else
                 sprintf(uptime_string, " %02d:%02d:%02dH", h, (uptime / 60), (uptime % 60));
             result + write_text_to_display(buffer, FONT_HEIGHT * UPT_DATA_WIDTH, uptime_string, UPT_DATA_LENGHT, text_color, window_color, caset, raset);
