@@ -17,3 +17,7 @@ These dependencies are requited:
 	apt-get install libgpiod-dev libgpiod-doc
 
 To execute the program only pass as parameter the path of the config file.
+
+A picture of real ST7789 screen showing the raspi-mon output
+
+![Alt text](Image.jpg)
